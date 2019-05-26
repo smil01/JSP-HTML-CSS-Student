@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="https://www.naver.com/" >
+		ID : <input type="text" id="id" name="id" size="50" maxlength="10" placeholder="ID를 입력하세요." required="required"> <br>
+		PW : <input type="password" id="pw" name="pw" size="50" maxlength="10" placeholder="PW를 입력하세요." required="required"> <br>
+		Email : <input type="email" id="email" name="email" size="50" maxlength="10" placeholder="Email을 입력하세요." required="required"> <br>
+		성별 : 남<input type="radio" name="gender" id="gender" checked="checked" value="1"> 여<input type="radio" name="gender" id="gender" value="0">
+		취미 : 축구<input type="checkbox" id="hobby" name="hobby" value="1"> 농구<input type="checkbox" id="hobby" name="hobby" value="2"> 야구<input type="checkbox" id="hobby" name="hobby" value="3"> 볼링<input type="checkbox" id="hobby" name="hobby" value="4"><br>
+		좋아하는 색상 : <input type="color" name="color" id="color"><br>
+		숫자 : <input type="number" name="num" id="num"><br>
+		파일추가 : <input type="file" name="file" id="file"><br>
+		범위 : <input type="range" name="range" id="range" min="0" max="10"><br>
+		날짜 : <input type="datetime-local" name="date" id="date"><br>
+		<select name="select" id="select">
+			<option>사과사과</option>
+			<option>배배</option>
+			<option>딸기딸기</option>
+		</select> <br>
+		<textarea rows="20" cols="20" name="text" id="text"></textarea><br>
+		<input type="submit" value="로그인">
+		<input type="reset" value="다시입력">
+	</form>
+	
+	<form action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&">
+		검색: <input type="text" id="query" name="query" size="50" maxlength="10" placeholder="검색어를 입력하세요."> <br>
+		<input type="submit" value="검색">
+		<input type="reset" value="다시입력">
+	</form>
+	
+</body>
+</html>

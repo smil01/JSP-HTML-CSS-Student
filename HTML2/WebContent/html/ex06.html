@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['오대근', 'Hours per Day'],
+          ['정동윤',     11],
+          ['김치현',      2],
+          ['강명성',  2],
+          ['권솔빈', 2],
+          ['오대근',    7]
+        ]);
+
+        var options = {
+          title: '호롤로로로로로로로롤'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 500px; height: 500px;"></div>
+  </body>
+</html>
