@@ -42,13 +42,13 @@
 			<!-- 1-2-1 첫번째 메뉴 (active는 현재 선택이 되어있는 효과를 줌) -->
 			<li><a href="index_main.html">소개</a></li>
 			<!-- 1-2-2 두번째 메뉴 (active는 현재 선택이 되어있는 효과를 줌) -->
-			<li class="active"><a href="index_table.html">강사</a></li>
+			<li><a href="index_table.html">강사</a></li>
 			<!-- 1-2-3 세번째 메뉴 (드랍다운 리스트 시작) 시작 -->
-			<li class="dropdown"><a href="#" class="dropdown-toggle"
+			<li class="active dropdown"><a href="#" class="dropdown-toggle"
 				data-toggle="dropdown" role="button" aria-haspopup="true"
 				aria-expanded="false">강의<span class="caret"></span></a>
 				<ul class="dropdown-menu">
-					<li><a href="index_dropdown_menu_1.html">C언어</a></li>
+					<li class="active"><a href="index_dropdown_menu_1.html">C언어</a></li>
 					<li><a href="#">자바</a></li>
 					<li><a href="#">Spring</a></li>
 				</ul></li>
@@ -83,102 +83,13 @@
 	<!-- 2 컨테이너 div라인 시작 -->
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<div class="panel panel-primary">
-					<div class="panel panel-heading">
-						<h3 class="panel-title"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;부스터 멤버</h3>
-					</div>
-					<div class="panel-body">
-						<div class="media-left">
-							<a href="#">
-								<img class="media-object" alt="프로필 이미지" src="img/Profile.jpg" width="150px" height="150px">
-							</a>
-						</div>
-						<div class="media-body">
-							<h4 class="media-heading">오대근</h4>
-							대근 부스터의 대표입니다.
-						</div>
-					</div>
-					<table class="table">
-						<thead>
-							<tr>
-								<td>글쓴이</td>
-								<td>글 번호</td>
-								<td>글 제목</td>
-								<td>작성일</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>오대근</td>
-								<td>1</td>
-								<td>C언어 기초 프로그래밍 강좌</td>
-								<td>2019-05-28</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>2</td>
-								<td>JAVA 기초 프로그래밍 강좌</td>
-								<td>2019-05-29</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>3</td>
-								<td>C++ 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>4</td>
-								<td>파이썬 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>5</td>
-								<td>C# 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>6</td>
-								<td>안드로이드 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>7</td>
-								<td>아몰랑 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>8</td>
-								<td>아몰랑 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>9</td>
-								<td>아몰랑 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>9</td>
-								<td>아몰랑 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-							<tr>
-								<td>오대근</td>
-								<td>10</td>
-								<td>아몰랑 기초 프로그래밍 강좌</td>
-								<td>2019-05-30</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
+			<ul class="list-group">
+				<a href="#" class="list-group-item active">1강 Hello Word</a>
+				<a href="#" class="list-group-item">2강 변수</a>
+				<a href="#" class="list-group-item">3강 주소변수</a>
+				<a href="#" class="list-group-item">4강 함수</a>
+				<a href="#" class="list-group-item">5강 사용자 지정 함수</a>
+			</ul>
 		</div>
 	</div>
 	<br> <!-- 끝부분 여백효과 -->
