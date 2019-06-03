@@ -53,7 +53,7 @@ a:hover {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus{ /* 드랍다운 배경색 및 글씨색 */
 	color: #000000;
-	background-color: #ffffff;
+	background-color: #1369cc;
 	text-decoration: none;
 }
 
