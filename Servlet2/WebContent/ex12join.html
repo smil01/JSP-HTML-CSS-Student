@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	fieldset {
+		width: 500px;
+	}
+</style>
+</head>
+<body>
+	<form action="ex10join" method="post">
+		<fieldset>
+			<legend>Join Page</legend>
+			<label for="id">ID</label> <input type="text" name="id" id="id"><br>
+			PW <input type="text" name="pw"><br>
+			NAME <input type="text" name="name"><br>
+			EMAIL <input type="text" name="email"><br>
+			TEL <input type="text" name="tel"><br>
+			<label for="radi">GENDER</label> 남<input type="radio" name="gender" value="남" id="radi"> 여<input type="radio" name="gender" value="여"><br>
+			HOBBY SPORT<input type="checkbox" name="hobby" value="sport"> STUDY<input type="checkbox" name="hobby" value="study"> EATING<input type="checkbox" name="hobby" value="eating"><br>
+			BIRTHDAY <input type="datetime" name="birthday"><br>
+			COLOR <input type="color" name="color"><br>
+			COUNTRY <select name="country"><option>광주</option><option>서울</option><option>부산</option></select><br>
+			TALK <textarea rows="15" cols="30" name="talk"></textarea>
+			<input type="submit">
+		</fieldset>
+	</form>
+</body>
+</html>

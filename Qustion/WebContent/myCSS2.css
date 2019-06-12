@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#wrap{
+	width: 1000px;
+	height: 1000px;
+}
+
+#header, #main_nav, #sub_nav, #content1, #content2, #footer{
+	padding: 3px;
+	box-sizing: border-box;
+	float: left;
+}
+
+#header, #main_nav, #footer{
+	width: 100%;
+}
+
+#header{
+	height: 8%;
+	background-color: red;
+}
+
+#main_nav{
+	height: 5%;
+	background-color: yellow;
+}
+
+#footer{
+	height: 7%;
+	background-color: blue;
+}
+
+#sub_nav{
+	width: 20%;
+	height: 80%;
+	background-color: green;
+}
+
+#content1, #content2{
+	width: 80%;
+	height: 40%;
+}
+
+#content1{
+	background-color: #800080;
+}
+
+#content2{
+	background-color: #00ffff;
+}
