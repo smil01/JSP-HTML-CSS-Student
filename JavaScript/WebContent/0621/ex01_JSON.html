@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+</head>
+<body>
+    <button>서버요청</button>
+    <script>
+        $(document).ready(function(){
+        	var movie_url = 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=430156241533f1d058c603178cc3ca0e&targetDt=20190615';
+            $('button').on('click', function(){
+                $.ajax({
+                    url:movie_url,
+                    success:function(data){
+                    	//JSON.stringify(data): object -> string
+                    	//JSON.parse(data): string -> object
+                        alert(JSON.stringify(data.boxOfficeResult.dailyBoxOfficeList[0].movieNm));
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

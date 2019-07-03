@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/moveImgStyle.css"/>
+</head>
+<body>
+    <div id="bg">
+        <img src='img/horse.png'> 
+        <button class='btn left'>LEFT</button><button class='btn right'>RIGHT</button>
+    </div>
+    
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+    	var right = 0;
+        $(document).ready(function(){
+            $(document).on('keydown', moveHorse);
+        });
+
+        function moveHorse(event){
+        	console.log(event.keyCode);
+        	
+        	if(event.keyCode == 37){
+                console.log('왼쪽');
+                $('img').css({
+                    'right' : right+=50
+                });
+            } else if(event.keyCode == 39) {
+                console.log('오른쪽');
+                $('img').css({
+                    'right' : right-=50
+                });
+            }
+        }
+    </script>
+</body>
+</html>

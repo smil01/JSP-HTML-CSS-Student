@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>DOM 다루기</h1>
+    <p onmouseover="change()">DOM은 HTML요소를 객체화 해주는 모델이다.</p>
+    <button onclick="reChange()">클릭</button>
+
+    <script>
+        function change(){
+            var h1 = document.getElementsByTagName('h1');
+            h1[0].innerHTML = 'DOM 접근하기'; // html로 직접 접근
+
+            var p = document.getElementsByTagName('p');
+            p[0].innerHTML = '<h1>p그를 h1태그로 변경</h1>';
+        }
+
+        function reChange(){
+            var h1 = document.getElementsByTagName('h1');
+            h1[0].innerHTML = 'DOM 다루기'; // html로 직접 접근
+
+            var p = document.getElementsByTagName('p');
+            p[0].innerHTML = '<p>DOM은 HTML요소를 객체화 해주는 모델이다.</p>';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(Math.random()*20+1);
+        
+        var i = 0;
+        alert(`${num}`);
+
+        while(true){
+            var result = prompt(`20까지의 숫자입니다. 5번짼 기회 중 ${++i}번째 기회입니다.`)
+
+            if(num == result){
+                alert(`승리하였습니다.`);
+                document.querySelector('body').style.backgroundImage = "url('./img/win.jpg')";
+                break;
+            } else if(i === 5){
+                alert(`실패하였습니다.`);
+                document.querySelector('body').style.backgroundImage = "url('./img/error.png')";
+                break;
+            } else {
+                if(num < result){
+                    alert(`${result}보다 작습니다.`);
+                } else {
+                    alert(`${result}보다 큽니다.`);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

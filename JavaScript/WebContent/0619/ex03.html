@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<img src="./img/img1.gif">
+	<br>
+	<button>이미지 번경</button>
+	<script>
+		var button = document.getElementsByTagName('button');
+
+		button[0].addEventListener('click', function(){
+			var img_tag = document.getElementsByTagName('img');
+			img_tag[0].src = './img/img2.gif';
+			//img_tag[0].setAttribute('src', './img/img2.gif');
+		});
+	</script>
+</body>
+</html>

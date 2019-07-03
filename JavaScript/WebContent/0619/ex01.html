@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<input type="text" id="txt1" onkeypress="show()">
+		<input type="button"  value="버튼">
+	</form>
+	<p id="txt2"></p>
+
+	<script>
+		function show(){
+			document.getElementById('txt2').innerHTML = document.getElementById('txt1').value;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>여행 준비물 점검 목록</title>
+<link rel="stylesheet" href="css/input.css">
+<link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+	<div id="wrapper">
+		<h2>여행 준비물 점검 목록</h2>
+		<form>
+			<input type="text" id="item" autofocus="true">
+			<button type="button" id="add" class="addBtn">추가</button>
+		</form>
+		<div id="itemList"></div>
+	</div>
+	<script>
+		var itemList = [];
+
+		var addBtn = document.getElementById('add');
+		addBtn.addEventListener('click', addItem);
+		
+		function addItem(){
+			var item = document.getElementById('item');
+
+			itemList.push(item.value);
+			item.value = '';
+			item.focus();
+			
+			showList();
+		}
+		
+		function showList(){
+			var list = '<ul>';
+			for(var i = 0; i<itemList.length; i++){
+				list += `<li>${itemList[i]}<span class='close' id='${i}'>X</span></li>`;
+			}
+			list += "</ul>";
+
+			document.getElementById('itemList').innerHTML = list;
+
+			var removeBtn = document.getElementsByClassName('close');
+			for(var i = 0; i<removeBtn.length; i++){
+				removeBtn[i].addEventListener('click', removeItem);
+			}
+		}
+		
+		function removeItem(){
+			var id = this.getAttribute('id');
+			itemList.splice(id, 1);
+			
+			showList();
+		}
+	</script>
+</body>
+</html>

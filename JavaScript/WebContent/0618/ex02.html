@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        for(var i = 0; i<5; i++){
+             var input = parseInt(prompt('숫자를 입력해주세요.'));
+             arr.push(input);
+        }
+
+        arr.pop(); // 테일부분
+        arr.shift(); // 헤드부분
+        arr.unshift(10);
+        alert(arr);
+    </script>
+</body>
+</html>

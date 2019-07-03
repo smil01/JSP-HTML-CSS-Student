@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <button onclick="show()">클릭</button>
+    <input type="text" value="" id="btn">
+    <p id="txt"></p>
+
+    <script>
+        var set = true;
+
+        function show(){
+            var p = document.getElementById('txt');
+            var btn = document.getElementById('btn');
+
+            if(set){
+                p.innerHTML = '<h1>안녕하세요~~~~~~~~~~~</h1>';
+                btn.value = '안녕하세요~~~~~~~~~~~';
+                set = false;
+            } else {
+                p.innerHTML = '안녕하하지 못해요~~~~~~~~~~~~';
+                btn.value = '안녕하하지 못해요~~~~~~~~~~~';
+                set = true;
+            }
+        }
+    </script>
+</body>
+</html>

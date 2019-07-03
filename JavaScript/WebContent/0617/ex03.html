@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		border: solid 1px;
+		text-align: center;
+		float: left;
+		margin: 5px;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+<script>
+	document.write("<table><tr><td>");
+	for(var i = 2; i<=9; i++){
+		document.write(`<div>`);
+		document.write(`<h3>${i}단</h3><br>`);	
+		for(var j = 1; j<=9; j++){
+			document.write(`${i}X${j}=${i*j}<br>`);	
+		}
+		document.write(`</div>`);
+	}
+	document.write("</td></tr></table>");	
+</script>
+</body>
+</html>

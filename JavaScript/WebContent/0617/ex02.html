@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        var result = prompt("빨강 초록 파랑 중 하나를 입력하세요.");
+        
+        var body = document.querySelector('body');
+
+        var color = (result === "빨강") ? "red" :
+                        (result === "초록") ? "green" :
+                        (result === "파랑") ? "blue" : "";
+        
+        /* body.bgColor = color; */
+        
+        document.write(`<body bgcolor=${color}>`);
+    </script>
+</body>
+</html>

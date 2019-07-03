@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        var a = this;
+
+        var Tv = {};
+        Tv.channel = 7;
+        Tv.volume = 5;
+        Tv.onOff = false;
+        Tv.show = function(){
+            var state = `채널 : ${Tv.channel}, 음량 : ${Tv.volume}, 상태 : ${Tv.onOff}`
+            return state;
+        }
+
+        var Tv2 = {
+            channel: 7,
+            volume: 5,
+            onOff: false,
+            show: function(){
+                var state = `채널 : ${this.channel}, 음량 : ${this.volume}, 상태 : ${this.onOff}`
+                return state;
+            }
+        };
+
+        
+        alert(Tv.show());
+        alert(Tv2.show());
+        alert(a.Tv2.show());
+    </script>
+</body>
+</html>

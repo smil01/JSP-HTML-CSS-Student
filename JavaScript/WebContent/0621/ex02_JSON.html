@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+</head>
+<body>
+    <button>서버요청</button>
+    <script>
+        $(document).ready(function(){
+            $('button').on('click', function(){
+                $.ajax({
+                    url:'../basicAjax',
+                    success:function(person){
+                    	alert(person.name);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5, 6, 8, 9, 10];
+
+        function ASC(a, b){
+            return a - b;
+        }
+
+        function DESC(a, b){
+            return b - 1;
+        }
+        
+        arr.sort(ASC);
+
+        //console.log(arr); # f12를 통해 구조를 확인할 수 있습니다.
+        alert(`최대값 >> ${arr}`);
+    </script>
+</body>
+</html>

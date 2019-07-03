@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a><h1>WEB 프로그래밍</h1></a>
+	<input type="button" value="NIGHT">
+	<input type="button" value="DAY">
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	<h1>Javascript</h1>
+	Javascript는 웹 페이지를 동적인 페이지로 만들어주는 언어입니다.
+
+	<script type="text/javascript">
+		var body = document.querySelector('body');
+		var buttons = document.querySelectorAll('input');
+		var dum = 0;
+
+		buttons[0].onclick = function() {
+			body.style.color = 'white';
+			body.style.background = 'black';
+		}
+
+		buttons[1].onclick = function() {
+			body.style.color = 'black';
+			body.style.background = 'white';
+		}
+	</script>
+</body>
+</html>

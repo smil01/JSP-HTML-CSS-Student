@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/imageSlide.css">
+</head>
+<body>
+	<div id="img">
+		<input type="button" id="btn1" class="btn pre" value="<" onclick="pre()">
+		<input type="button" id="btn2" class="btn next" value=">" onclick="next()">
+	</div>
+
+	<script>
+		var count = 1;
+
+		var img = document.getElementById('img');
+		var button = document.querySelectorAll('.btn');
+
+		button[0].addEventListener('click', function(){
+			if(count < 1) count = 14 + 1;
+			img.style.backgroundImage = `url(img/${--count}.jpg)`; // �댁��④낵
+		});
+
+		button[1].addEventListener('click', function(){
+			if(count > 14 - 1) count = 0;
+			img.style.backgroundImage = `url(img/${++count}.jpg)`;
+		});
+		
+		setInterval(function() {
+			
+		}, 800);
+	</script>
+</body>
+</html>
